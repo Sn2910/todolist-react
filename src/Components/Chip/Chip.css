@@ -1,0 +1,12 @@
+.chip{
+
+border-radius: 18px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 4px 8px;
+color: #FFF;
+width: fit-content;
+font-size: 12px;
+
+}

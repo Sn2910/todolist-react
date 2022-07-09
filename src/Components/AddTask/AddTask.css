@@ -1,0 +1,55 @@
+
+.input_task{
+    display: flex;
+    flex-direction: column;
+}
+.input_task input{
+   
+    width: 100%;
+    border: none;
+    outline: none;
+    min-height: 60px;
+    max-height: 160px;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.4);
+    
+
+}
+.input_task input:focus{
+    border: 1px solid blue;
+}
+.addTask_footer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.addTask_footer svg{
+    height: 20px;
+}
+.addTask_footer button{
+    background-color: green;
+    border: none;
+    outline: none;
+    padding: 6px;
+    border-radius: 4px;
+    color: #fff;
+}
+.addcard{
+    display: flex;
+    align-items: center;
+    padding: 10px 6px;
+    border-radius: 5px;
+    gap: 5px;
+    font-size: 16px;
+}
+.addcard:hover{
+    background-color: #1e212514;
+    color: #172b4d;
+}
+.addTask{
+    min-width: 290px;
+}
+
