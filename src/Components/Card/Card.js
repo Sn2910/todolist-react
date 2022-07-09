@@ -2,11 +2,17 @@ import React, {useState} from 'react'
 import Chip from '../Chip/Chip'
 import { CheckSquare, Clock, Edit2} from 'react-feather'
 import Dropdown from '../Dropdown/Dropdown'
+import CardDetails from './CardDetails/CardDetails'
 import './Card.css'
 function Card(props) {
   const[showDropdown, setDropdown] = useState(false)
+  const[showModal,setShowModal] =useState(false)
+ 
   return (
-    <div className='card'>
+    <>
+    {showModal && <CardDetails onClose ={() => setShowModal(false)}/> } 
+    <div className='card' onClick={()=> setShowModal(true)}>
+     
       <div className="card_header">
            <div className="card_header_label">
            { props.card?.labels?.map((label,index)=>
@@ -42,7 +48,9 @@ function Card(props) {
         1/4</p>
       </div>
     </div>
+    </>
   )
+ 
 }
 
 export default Card

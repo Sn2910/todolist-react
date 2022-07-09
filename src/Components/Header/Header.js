@@ -6,6 +6,7 @@ function Header() {
     <div className='navbar_container'>
      <div className="navbar">
         <h2>To Do List</h2>
+        
      </div>
     </div>
   )
