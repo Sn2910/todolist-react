@@ -3,31 +3,7 @@
     padding: 0;
     box-sizing: border-box;
  }
-/*main{
-    border: 1px solid red;
 
-    height: 100vh;
-    min-width: fit-content;
-    display: flex;
-    flex-direction: column;
-    
-
-}
-.board_outer_container{
-    border: 1px solid rgb(4, 0, 255);
-    flex: 1;
-    overflow-x: auto;
-    padding: 10px 50px;
-
-}
-.board_container{
-    border: 1px solid rgb(46, 94, 80);
-    display: flex;
-    min-width: fit-content;
-    gap: 30px;
-    height: 100%;
-   
-} */
 main{
 
   min-height: 100vh;
@@ -52,6 +28,7 @@ main{
 
 }
 .addBoardDisplay{
+    width: 100%;
     min-width: 290px;
     background-color: #f8f8f8;
     border-radius: 5px;  

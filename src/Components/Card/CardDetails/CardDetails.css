@@ -1,7 +1,71 @@
 .carddetails_container{
     background-color: #fff;
- padding: 20px;
-  width: 500px;
-   
+     padding: 30px;
+     width: 500px;
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+    
+}
+.carddetails{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.carddetails_title{
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+.carddetails_body{
+width: fit-content;
 
 }
+.carddetails_body input {
+ 
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+}
+.carddetails_color {
+ display: flex;
+ gap: 10px;
+ align-items: center;
+}
+.carddetails_color li{
+  list-style: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  transition: 200ms;
+
+}
+.carddetails_color li .active{
+  border: 3px solid rgb(18, 241, 85);
+}
+.task_progress_bar{
+  height: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+}
+.task_progess{
+  height: 10px;
+  background-color: blue;
+  border-radius: 20px;
+  width: 30%;
+
+}
+.tasks{
+  display: flex;
+  justify-content: space-between;
+}
+.task_input{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+

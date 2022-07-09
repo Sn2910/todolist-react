@@ -4,7 +4,7 @@ import './AddTask.css'
 
 function AddTask(props) {
     const [showTask, setShowTask] = useState(true)
-    const[inputVal, setInputVal] = useState("")
+    const[inputVal, setInputVal] = useState(props.text||"")
   return (
     <div className='addTask'>
         {showTask ?
