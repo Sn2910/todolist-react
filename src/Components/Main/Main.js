@@ -7,7 +7,7 @@ import AddTask from '../AddTask/AddTask'
 
 function Main() {
   const [boards, setBoards]  = useState([
-{
+   {
       id: Date.now() + Math.random()*2,
       title: "Brainstorm",
       cards:
@@ -84,7 +84,15 @@ function Main() {
     const tempBoards = boards.filter((item)=> item.id !== boardId)
     setBoards(tempBoards)
   }
-
+  const updateCard = (cid, bid, card) => {
+    const bIndex = boards.findIndex((item)=>item.id === bid) 
+    if(bIndex < 0) return;
+    const cIndex = boards[bIndex].cards.findIndex((item)=>item.id === cid) 
+    if(cIndex < 0) return;
+    const tempBoards = [...boards]
+    tempBoards[bIndex].cards[cIndex] =card
+    setBoards(tempBoards)
+  }
   return (
     <div>
       <Header />
@@ -99,6 +107,7 @@ function Main() {
                   removeBoard ={removeBoard} 
                   addCard = {addCard}
                   removeCard ={removeCard}
+                  updateCard = {updateCard}
                         
               />
                
@@ -121,4 +130,5 @@ function Main() {
   )
 }
 
-export default Main
+
+export default Main;

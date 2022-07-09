@@ -10,3 +10,6 @@ width: fit-content;
 font-size: 12px;
 
 }
+.chip svg{
+    height: 16px
+}

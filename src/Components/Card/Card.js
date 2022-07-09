@@ -10,7 +10,14 @@ function Card(props) {
  
   return (
     <>
-    {showModal && <CardDetails onClose ={() => setShowModal(false)}/> } 
+    {showModal && 
+    <CardDetails onClose ={() => setShowModal(false)} 
+    card ={props.card}
+    updateCard ={props.updateCard}
+    boardId={props.boardId}
+
+    
+    /> } 
     <div className='card' onClick={()=> setShowModal(true)}>
      
       <div className="card_header">

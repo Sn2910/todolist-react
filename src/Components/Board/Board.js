@@ -33,6 +33,7 @@ function Board(props) {
       card = {card}
       boardId= {props.board?.id}
       removeCard = {props.removeCard}
+      updateCard = {props.updateCard}
      />
       ))}    
       <AddTask 

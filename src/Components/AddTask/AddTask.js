@@ -9,7 +9,7 @@ function AddTask(props) {
     <div className='addTask'>
         {showTask ?
         (<p className={`addcard ${props.boardDisplay}`} onClick={() => setShowTask(false)}>
-        <Plus /> 
+        {/* <Plus />  */}
         {props.text}
     </p>)
      :( <form 

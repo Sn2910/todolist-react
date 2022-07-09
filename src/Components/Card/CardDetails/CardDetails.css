@@ -56,7 +56,7 @@ width: fit-content;
   height: 10px;
   background-color: blue;
   border-radius: 20px;
-  width: 30%;
+ 
 
 }
 .tasks{
@@ -67,5 +67,22 @@ width: fit-content;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.task_edit{
+  display: flex;
+  gap:4px;
+}
+.tasks svg{
+  
+  height: 18px;
+  width: 18px;
+  
+  color: gray;
+
+}
+.carddetails_labels{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 

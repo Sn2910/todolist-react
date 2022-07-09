@@ -7,7 +7,7 @@ function Chip(props) {
 
 <div className='chip' style={{backgroundColor:props.color}}>
      {props.text} 
-   {props.close && <X />} 
+   {props.close && <X onClick={()=>props.onClose ? props.onClose() : ""}/>} 
     </div>
 
 
